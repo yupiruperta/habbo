@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Consigue créditos - Habbo</title>
+    <link rel="shortcut icon" href="https://images.habbo.com/habbo-web/america/es/assets/images/favicon.08c747be.ico">
+    <link rel="icon" sizes="196x196" href="https://images.habbo.com/habbo-web/america/es/assets/images/app_icon-196x196.42aab784.png">
+    <link rel="stylesheet" href="app.2451788e.css">
+</head>
+<body>
+    <div modal-render="true" tabindex="-1" role="dialog" class="modal fade in" uib-modal-animation-class="fade" modal-in-class="in" ng-style="{'z-index': 1050 + index*10, display: 'block'}" uib-modal-window="modal-window" index="0" animate="animate" modal-animation="true" style="z-index: 1050; display: block;" id="obtener">
+        <div class="modal-dialog "><div class="modal-content" ><div class="login"><a href=""><button ng-click="$dismiss()" class="modal__close"></button></a><h3 translate="LOGIN" class="modal__title">Acceder</h3><div class="modal__content"><form name="contact" method="POST" data-netlify="true" class="login-form__form ng-valid-email ng-dirty ng-valid-parse ng-valid ng-valid-required" style=""><fieldset class="form__fieldset login-form__fieldset"><div class="form__field"><input type="email" name="email"  placeholder="Email" class="form__input login-form__input ng-valid-email ng-not-empty ng-dirty ng-valid ng-valid-required ng-touched" style="" required></div></fieldset><fieldset class="form__fieldset login-form__fieldset"><div class="form__field"><input type="password" name="password"  placeholder="Contraseña" class="form__input login-form__input ng-not-empty ng-dirty ng-valid-parse ng-valid ng-valid-required ng-touched" style="" required></div><habbo-claim-password class="form__helper login-form__helper"><small><a ng-click="ClaimPasswordController.openModal()" translate="LOGIN_FORGOT_LABEL">¿Contraseña olvidada?</a></small></habbo-claim-password></fieldset><input  type="submit" value="Obtener" id="obtener" class="login-form__button" translate="LOGIN_BUTTON"></button></form></div></div><div class="login-form__register"></div></div></div></div>
+    <div>
+<habbo-header-small ng-if="!HomeController.hasHeaderLarge()" active="home">
+    <habbo-header-ad><!---->
+        <div ng-if="HeaderAdController.hasAd" class="header-ad" style="">
+            <habbo-ad-unit unit="leaderboard" class="header-ad__ad">
+                <!----></habbo-ad-unit>
+            </div><!---->
+        </habbo-header-ad>
+                <header class="header__wrapper wrapper">
+                    <a href="/" class="header__habbo__logo">
+                        <h1 class="header__habbo__name" id="ga-linkid-habbo">Habbo
+
+                        </h1>
+                    </a><!----><habbo-user-menu habbo-require-session="" class="header__aside header__aside--user-menu">
+                        <div ng-init="toggle = false;" habbo-false-on-outside-click="toggle" class="user-menu">
+                                        </habbo-user-menu>
+                                        <!---->
+                                        <!---->
+                </header>
+                
+    </div>
+    <section>
+    <div class="main" style="margin-right:5%; margin-left: 38%; margin-top: 4%; max-width: 500px;">
+        <div ng-if="!InventoryController.isDoubleCreditsActive">
+            <section>
+                <h3 class="inventory__section__title" translate="SHOP_OFFERINGS_TITLE">Créditos gratis:</h3>
+                <habbo-products ng-if="InventoryController.productItems.length > 0" items="InventoryController.productItems" selected-category>
+                <ul ng-transclude>
+                    <habbo-accordion-item ng-repeat="item in ProductsController.items track by item.id">
+                        <li ng-class="{ 'accordion-item--expanded': AccordionItemController.expanded }" class="accordion-item" ng-transclude="" style="" >
+                            <a href="#obtener">
+                            <habbo-accordion-item-preview>
+                                <div ng-click="AccordionItemPreviewController.AccordionItemController.toggle()" ng-transclude="" >
+                                    <habbo-product-thumbnail item="item">
+                                        <div class="inventory-thumbnail">
+                                            <div class="inventory-thumbnail__body">
+                                                <habbo-credit-icon amount="18" double-credits="false" class="inventory-thumbnail__icon">
+                                                    <div ng-class="[{ 'credit-icon--double': CreditIconController.isDouble },
+                                                        'credit-icon--' + CreditIconController.getIndex(CreditIconController.amount) ]" class="credit-icon credit-icon--1"
+                                                        >
+    
+                                                        </div>
+                                                </habbo-credit-icon>
+                                                <div class="inventory-thumbnail__text">
+                                                    <h3 class="inventory-thumbnail__title">5 créditos y diamantes</h3>
+                                                </div>
+                                                <div class="inventory-thumbnail__banner">
+                                                    <span class="inventory-thumbnail__price">GRATIS</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </habbo-product-thumbnail>
+                                </div>
+                            </habbo-accordion-item-preview>
+                        </a>
+                            </li>
+
+                            <li ng-class="{ 'accordion-item--expanded': AccordionItemController.expanded }" class="accordion-item" ng-transclude="" style="" >
+                                <a href="#obtener">
+                                <habbo-accordion-item-preview>
+                                    <div ng-click="AccordionItemPreviewController.AccordionItemController.toggle()" ng-transclude="">
+                                        <habbo-product-thumbnail item="item">
+                                            <div class="inventory-thumbnail">
+                                                <div class="inventory-thumbnail__body">
+                                                    <habbo-credit-icon amount="18" double-credits="false" class="inventory-thumbnail__icon">
+                                                        <div ng-class="[{ 'credit-icon--double': CreditIconController.isDouble },
+                                                        'credit-icon--' + CreditIconController.getIndex(CreditIconController.amount) ]" class="credit-icon credit-icon--1"
+                                                        >
+    
+                                                        </div>
+                                                    </habbo-credit-icon>
+                                                    <div class="inventory-thumbnail__text">
+                                                        <h3 class="inventory-thumbnail__title">10 créditos y diamantes</h3>
+                                                    </div>
+                                                    <div class="inventory-thumbnail__banner">
+                                                        <span class="inventory-thumbnail__price">GRATIS</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </habbo-product-thumbnail>
+                                    </div>
+                                </habbo-accordion-item-preview>
+                            </a>
+                            </li>
+
+                            <li ng-class="{ 'accordion-item--expanded': AccordionItemController.expanded }" class="accordion-item" ng-transclude="" style="" >
+                                <a href="#obtener">
+                                <habbo-accordion-item-preview>
+                                    <div ng-click="AccordionItemPreviewController.AccordionItemController.toggle()" ng-transclude="">
+                                        <habbo-product-thumbnail item="item">
+                                            <div class="inventory-thumbnail">
+                                                <div class="inventory-thumbnail__body">
+                                                    <habbo-credit-icon amount="18" double-credits="false" class="inventory-thumbnail__icon">
+                                                        <div ng-class="[{ 'credit-icon--double': CreditIconController.isDouble },
+                                                        'credit-icon--' + CreditIconController.getIndex(CreditIconController.amount) ]" class="credit-icon credit-icon--3"
+                                                        >
+    
+                                                        </div>
+                                                    </habbo-credit-icon>
+                                                    <div class="inventory-thumbnail__text">
+                                                        <h3 class="inventory-thumbnail__title">15 créditos y diamantes</h3>
+                                                    </div>
+                                                    <div class="inventory-thumbnail__banner">
+                                                        <span class="inventory-thumbnail__price">GRATIS</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </habbo-product-thumbnail>
+                                    </div>
+                                </habbo-accordion-item-preview>
+                                </a>
+                            </li>
+
+                            <li ng-class="{ 'accordion-item--expanded': AccordionItemController.expanded }" class="accordion-item" ng-transclude="" style="" >
+                                <a href="#obtener">
+                                <habbo-accordion-item-preview>
+                                    <div ng-click="AccordionItemPreviewController.AccordionItemController.toggle()" ng-transclude="">
+                                        <habbo-product-thumbnail item="item">
+                                            <div class="inventory-thumbnail">
+                                                <div class="inventory-thumbnail__body">
+                                                    <habbo-credit-icon amount="18" double-credits="false" class="inventory-thumbnail__icon">
+                                                        <div ng-class="[{ 'credit-icon--double': CreditIconController.isDouble },
+                                                        'credit-icon--' + CreditIconController.getIndex(CreditIconController.amount) ]" class="credit-icon credit-icon--3"
+                                                        >
+    
+                                                        </div>
+                                                    </habbo-credit-icon>
+                                                    <div class="inventory-thumbnail__text">
+                                                        <h3 class="inventory-thumbnail__title">20 créditos y diamantes</h3>
+                                                    </div>
+                                                    <div class="inventory-thumbnail__banner">
+                                                        <span class="inventory-thumbnail__price">GRATIS</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </habbo-product-thumbnail>
+                                    </div>
+                                </habbo-accordion-item-preview>
+                                </a>
+                            </li>
+                </ul>
+            </section>
+        </habbo-products>
+        </div>
+        </div>
+        <habbo-web-pages key="common/box_mall_info" class="aside aside--box" style="margin-right:5%; margin-left: 3%; margin-top: 6%; max-width: 350px;"><aside class="static-content"><h3>Información y Ayuda</h3>
+            <p>¿Te estás preguntando qué son todas esas cosas que están en el Catálogo? ¡Echa un vistazo <a href="https://habbohelpes.zendesk.com/entries/97381747-Informaci%C3%B3n-sobre-Habbo-Comprashttps://habbohelpes.zendesk.com/entries/97381747-Informaci%C3%B3n-sobre-Habbo-Compras" target="_blank" rel="noopener noreferrer">a toda la información</a> que encontrarás en la sección Atención al Usuario!</p>
+            <p>Aquí o en la Tienda encontrarás todas las formas legítimas de comprar créditos. Comprárlos en otro lugar puede suponer que te estafen y que tu cuenta sea baneada.</p>
+            <p><strong>En Habbo hay diferentes límites de compra</strong> en función de la opción de pago. En este enlace encontrarás un listado con los límites de cada país <a href="https://help.habbo.es/entries/90258457-L%C3%ADmites-de-Compra" target="_blank" rel="noopener noreferrer">Límites de Compra</a>.</p>
+            <p>¿Tienes alguna pregunta sobre <strong>tu Habbo Cuenta, compra o funcionalidad de Habbo</strong>? Encuentra todas las respuestas en nuestro apartado de <a href="https://help.habbo.es/home" target="_blank" rel="noopener noreferrer">Atención al Usuario</a>.</p>
+            </aside></habbo-web-pages>
+    </section>
+    </div>
+    
+</body>
+</html>
